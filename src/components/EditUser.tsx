@@ -1,7 +1,7 @@
-import React, { ChangeEvent, FormEvent, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { ChangeEvent, FormEvent, useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { hideModal } from 'store/actions/modalActions';
-import { INewUser, IUser, RootState } from 'types';
+import { INewUser, IUser } from 'types';
 import { updateUser } from 'utils/rest';
 import { Button } from './Button';
 
@@ -11,7 +11,6 @@ type Props = {
 
 export default function EditUser({ user }: Props) {
     const dispatch = useDispatch();
-    const users = useSelector((state: RootState) => state.usersReducer);
 
     const [updatedUser, setUpdatedUser] = useState<INewUser>({
         name: user.name,

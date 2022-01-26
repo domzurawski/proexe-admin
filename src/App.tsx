@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import { getUsers } from 'utils/rest';
 import { useSelector } from 'react-redux';
 import { RootState } from 'types';
-import Modal from 'components/Modal';
 
 export default function App() {
     const users = useSelector((state: RootState) => state.usersReducer);
@@ -19,7 +18,6 @@ export default function App() {
                 Dashboard
             </h1>
             <UserList users={users} />
-            <Modal />
         </MainLayout>
     );
 }
