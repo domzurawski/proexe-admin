@@ -40,7 +40,7 @@ export default function UserListElement({ user }: Props) {
                     onClick={() =>
                         dispatch(showModal(<EditUser user={user} />))
                     }
-                    className="bg-white border border-yellow-500 text-yellow-500 mb-2 sm:mb-0 sm:mr-2 w-full"
+                    className="w-full bg-white border border-yellow-500 text-yellow-500 mb-2 sm:mb-0 sm:mr-2"
                 >
                     Edit
                 </Button>
@@ -48,7 +48,7 @@ export default function UserListElement({ user }: Props) {
                     onClick={() =>
                         dispatch(showModal(<DeleteUser user={user} />))
                     }
-                    className="bg-red-700 w-full"
+                    className="w-full bg-red-700"
                 >
                     Delete
                 </Button>

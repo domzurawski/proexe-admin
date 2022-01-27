@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { API_ENDPOINT } from 'constants/endpoints';
+import { stopLoading } from 'store/actions/loadingActions';
 import { hideModal } from 'store/actions/modalActions';
 import { setUsers } from 'store/actions/usersActions';
 import { store } from 'store/store';
@@ -8,7 +9,10 @@ import { IUser } from 'types';
 export const getUsers = async () => {
     await axios
         .get(API_ENDPOINT + '/data')
-        .then(({ data }) => store.dispatch(setUsers(data)))
+        .then(({ data }) => {
+            store.dispatch(setUsers(data));
+            store.dispatch(stopLoading());
+        })
         .catch((e) => console.log(e));
 };
 

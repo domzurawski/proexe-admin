@@ -99,7 +99,7 @@ export default function EditUser({ user }: Props) {
                 <div className="flex">
                     <Button
                         onClick={() => dispatch(hideModal())}
-                        className="flex-1 bg-white border hover:bg-neutral-100 border-neutral-500 text-neutral-900 mr-2"
+                        className="flex-1 bg-white border hover:bg-neutral-100 border-neutral-500 text-black mr-2"
                     >
                         Cancel
                     </Button>

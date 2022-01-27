@@ -32,6 +32,7 @@ export interface INewUser {
 export interface RootState {
     usersReducer: IUser[];
     modalReducer: IModalState;
+    loadingReducer: boolean;
 }
 
 export enum UsersActionTypes {
@@ -56,4 +57,31 @@ export enum ModalActionTypes {
 export interface IModalAction {
     type: ModalActionTypes;
     payload: IModalState;
+}
+
+export interface ISort {
+    type: SortUsersTypes;
+    column: string;
+}
+
+export enum SortUsersTypes {
+    ASC = 'asc',
+    DESC = 'desc',
+}
+
+export enum SortingOptions {
+    ID = 'id',
+    NAME = 'name',
+    USERNAME = 'username',
+    EMAIL = 'email',
+    CITY = 'address.city',
+}
+
+export enum LoadingActionTypes {
+    START_LOADING = 'START_LOADING',
+    STOP_LOADING = 'STOP_LOADING',
+}
+
+export interface ILoadingAction {
+    type: LoadingActionTypes;
 }

@@ -10,7 +10,7 @@ export function Button({ onClick, className, children }: Props) {
     return (
         <button
             onClick={onClick}
-            className={`flex justify-around items-center w-fit px-4 py-2 text-white rounded hover:bg-opacity-90 hover:border-opacity-80 transition ${className}`}
+            className={`flex justify-around items-center px-4 py-2 text-white rounded hover:bg-opacity-90 hover:border-opacity-80 transition ${className}`}
         >
             {children}
         </button>
