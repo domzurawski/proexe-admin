@@ -113,7 +113,9 @@ export default function AddUser() {
                     >
                         Cancel
                     </Button>
-                    <Button className="flex-1 bg-green-700">Add</Button>
+                    <Button className="flex-1 bg-green-700 text-white">
+                        Add
+                    </Button>
                 </div>
             </form>
         </>

@@ -103,7 +103,9 @@ export default function EditUser({ user }: Props) {
                     >
                         Cancel
                     </Button>
-                    <Button className="flex-1 bg-yellow-500">Edit</Button>
+                    <Button className="flex-1 bg-yellow-500 text-white">
+                        Edit
+                    </Button>
                 </div>
             </form>
         </>

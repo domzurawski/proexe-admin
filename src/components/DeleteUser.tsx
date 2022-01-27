@@ -25,7 +25,7 @@ export default function DeleteUser({ user }: Props) {
                     Cancel
                 </Button>
                 <Button
-                    className="flex-1 bg-red-700"
+                    className="flex-1 bg-red-700 text-white"
                     onClick={() => deleteUser(user.id)}
                 >
                     Delete

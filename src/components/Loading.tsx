@@ -3,7 +3,7 @@ import ReactLoading from 'react-loading';
 
 export default function Loading() {
     return (
-        <div className="flex flex-col h-screen w-screen">
+        <div className="flex flex-col h-full w-full">
             <ReactLoading
                 className="mx-auto mt-20"
                 type="spinningBubbles"
