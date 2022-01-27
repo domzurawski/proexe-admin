@@ -48,7 +48,7 @@ export default function UserListElement({ user }: Props) {
                     onClick={() =>
                         dispatch(showModal(<DeleteUser user={user} />))
                     }
-                    className="w-full bg-red-700"
+                    className="w-full bg-red-700 text-white"
                 >
                     Delete
                 </Button>
@@ -69,7 +69,7 @@ export default function UserListElement({ user }: Props) {
                     onClick={() =>
                         dispatch(showModal(<DeleteUser user={user} />))
                     }
-                    className="bg-red-700 md:mx-auto"
+                    className="bg-red-700 md:mx-auto text-white"
                 >
                     Delete
                 </Button>
